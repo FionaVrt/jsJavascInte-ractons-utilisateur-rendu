@@ -21,11 +21,12 @@ fetch('https://pokeapi.co/api/v2/pokemon-species')
                 pokemon.innerHTML = `<div class="cards__card card">
                 <h2 class="card__heading">${data.name}</h2>
                 <img src="${data.sprites.front_default}" alt="pokemon" class="card__img">
-                <p class="card__price"></p>
-                <a href="" class="card__cta cta">View Project</a>
+                <a href="produit.html" class="card__cta cta">View Project</a>
             </div>`
                 cardsContainerInner.appendChild(pokemon);
             
             });
     }
+
+    
     
