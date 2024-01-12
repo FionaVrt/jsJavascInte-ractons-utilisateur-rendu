@@ -1,3 +1,7 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #c96b6b;
+}
 h2.main_produc {
     font-size: 24px;
     margin-top: 20px;
@@ -28,4 +32,18 @@ h2.main_produc {
     max-width: 100%;
     height: auto;
     margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    transition: transform 0.3s ease-in-out; /* Ajoute une transition à l'animation */
+}
+
+.card__img:hover {
+    transform: scale(1.05); /* Agrandit l'image de 5% lorsque la souris est dessus */
+}
+
+@media screen and (max-width: 768px) {
+    .produc__inner {
+        width: 100%;
+    }
 }
