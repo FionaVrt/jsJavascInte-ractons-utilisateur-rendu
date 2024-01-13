@@ -59,3 +59,4 @@ function checkout() {
     alert('Fonctionnalité de paiement non implémentée dans cet exemple.');
     // Vous pouvez ajouter ici la logique de paiement ou rediriger vers une page de paiement.
 }
+

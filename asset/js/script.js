@@ -28,5 +28,25 @@ fetch('https://pokeapi.co/api/v2/pokemon-species')
             });
     }
 
+    document.addEventListener('DOMContentLoaded', function () {
+        const scrollToTopBtn = document.getElementById('scrollToTopBtn');
+    
+        window.addEventListener('scroll', function () {
+            // Afficher le bouton lorsque l'utilisateur fait défiler vers le bas
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                scrollToTopBtn.classList.add('show');
+            } else {
+                scrollToTopBtn.classList.remove('show');
+            }
+        });
+    
+        scrollToTopBtn.addEventListener('click', function () {
+            // Faire défiler la page vers le haut lorsqu'on clique sur le bouton
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        });
+    });
+    
+
     
     
